@@ -73,6 +73,16 @@
 			margin:auto;
 			//border:solid 1px red;
 		}
+		.dropdownContents{
+		display:none;
+		background-color:#ffaaff;
+		position:absolute;
+		width:100px;
+		padding:12px 16px;
+	}
+	.dropdown:hover .dropdownContents{
+		display:block;
+	}
 </style>
 </head>
 <body>
@@ -87,7 +97,9 @@
 </header>
 <div class='clear'></div> <!--float 속성해제 -->
 		<nav>
+			<div class="dropdown">
 				<ul>
+					<div class="dropdownContents">
 						<li>어원</li>
 						<li>소개</li>
 						<li>여행지</li>
@@ -102,7 +114,9 @@
 			</section>
 			
 					<aside>
+						<div class="dropdown">
 						<ul>
+							<div class="dropdownContents">
 						     <li>주요여행지</li>
 						     <li>마이너여행지</li>
 						     <li>지역특징</li>
